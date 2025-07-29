@@ -2,6 +2,6 @@
     "name": "demo-dapp-with-wallet",
     "compatibility_date": "2025-07-29",
     "assets": {
-      "directory": "./dist"
+      "directory": "./docs"
     }
 }
