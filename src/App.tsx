@@ -25,10 +25,14 @@ const walletsRequiredFeatures: RequiredFeatures = {
     // },
 };
 
+const urlObj = new URL(window.location.toString());
+urlObj.pathname = '/tonconnect-manifest.json'
+const url = urlObj.toString()
+
 function App() {
   return (
     <TonConnectUIProvider
-      manifestUrl="https://ton-connect.github.io/demo-dapp-with-wallet/tonconnect-manifest.json"
+      manifestUrl={url}
       uiPreferences={{theme: THEME.DARK}}
       // walletsRequiredFeatures={walletsRequiredFeatures}
       // walletsPreferredFeatures={walletsRequiredFeatures}
